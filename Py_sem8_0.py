@@ -16,7 +16,6 @@
 
 # ВЕРСИЯ ДЛЯ КОНСОЛИ
 
-from random import *
 import json
 
 def load():
