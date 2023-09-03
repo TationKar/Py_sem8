@@ -54,7 +54,7 @@ class Phone_bk(QtWidgets.QMainWindow):
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
         self.init_UI()
-        self.setup_connection()
+        # self.setup_connection()
         
     
     def init_UI(self):
@@ -70,12 +70,12 @@ class Phone_bk(QtWidgets.QMainWindow):
         self.model = QStandardItemModel()
         self.ui.table_contacts.setModel(self.model)
         # self.ui.table_contacts.setContextMenuPolicy(Qt.ContextMenuPolicy.CustomContextMenu)
-        self.ui.table_contacts.setSelectionMode(QTableWidget.selectionChanged)
+        # self.ui.table_contacts.setSelectionMode(QTableWidget.selectionChanged)
         # self.ui.table_contacts.itemS
 
-    def setup_connection(self): 
+    # def setup_connection(self): 
         # connected function to item selection changed trigger of my_table
-        self.ui.table_contacts.itemSelectionChanged.connect(self.action_report_in_view)
+        # self.ui.table_contacts.itemSelectionChanged.connect(self.action_report_in_view)
     
     def action_report_in_view(self, *arg):
         values = []
