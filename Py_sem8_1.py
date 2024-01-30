@@ -44,10 +44,8 @@ tmp_phone = ""
 try:
     load()
 except:
-    phone_book = [{"Дядя Петя": {"phone_numbers": [9998881234, 9997772233], "birth_day": "121276", "email": "mail@mail.ss"},
-                   "Тетя Песя": {"phone_numbers": [9998881444]}}]
+    phone_book = {"First_note_ID": {"phone_numbers": "Первая заметка", "birth_day": "Это первая заметка в приложении", "email": ""}, "Second_note_ID": {"phone_numbers": "Вторая заметка", "birth_day": "Текст второй заметки", "email": ""}}
     save()
-
 
 class AnotherWindow(QWidget):
 
